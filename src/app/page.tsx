@@ -4,12 +4,16 @@ import { ShopPanel } from '@/components/game/ShopPanel';
 import { GameLoop } from '@/components/game/GameLoop';
 import { OfflineProgressDialog } from '@/components/game/OfflineProgressDialog';
 import { ResetButton } from '@/components/game/ResetButton';
+import { SoundManager } from '@/components/game/SoundManager';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
       {/* ゲームループ（非表示） */}
       <GameLoop />
+      
+      {/* サウンドマネージャー */}
+      <SoundManager />
       
       {/* オフラインダイアログ */}
       <OfflineProgressDialog />

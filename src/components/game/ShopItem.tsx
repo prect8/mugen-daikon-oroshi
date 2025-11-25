@@ -27,6 +27,11 @@ export function ShopItem({ upgrade }: ShopItemProps) {
       if (success) {
         setJustPurchased(true);
         setTimeout(() => setJustPurchased(false), 300);
+        
+        // 購入効果音を再生
+        if (typeof window !== 'undefined' && (window as any).__playPurchaseSound) {
+          (window as any).__playPurchaseSound();
+        }
       }
     }
   };

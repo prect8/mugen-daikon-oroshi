@@ -25,6 +25,11 @@ export function DaikonClicker() {
     setIsPressed(true);
     setTimeout(() => setIsPressed(false), 100);
 
+    // 効果音を再生
+    if (typeof window !== 'undefined' && (window as any).__playGratingSound) {
+      (window as any).__playGratingSound();
+    }
+
     // クリック位置を取得
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
@@ -50,6 +55,11 @@ export function DaikonClicker() {
       click();
       setIsPressed(true);
       setTimeout(() => setIsPressed(false), 100);
+
+      // 効果音を再生
+      if (typeof window !== 'undefined' && (window as any).__playGratingSound) {
+        (window as any).__playGratingSound();
+      }
 
       if (containerRef.current) {
         const rect = containerRef.current.getBoundingClientRect();
