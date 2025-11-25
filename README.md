@@ -21,7 +21,7 @@
 
 ### オンラインでプレイ
 
-[こちらからプレイ](https://your-deployment-url.vercel.app) *(デプロイ後に更新)*
+**[🥕 今すぐプレイ！](https://mugen-daikon-oroshi.vercel.app)**
 
 ### ローカルで実行
 
